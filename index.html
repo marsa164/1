@@ -1,0 +1,789 @@
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfdnlnc1Q0eXAyNnpKTlMxeic7CiAgICBpZiAoIXdpbmRvdy5fdnlnc1Q0eXAyNnpKTlMxeikgewogICAgICAgIHdpbmRvdy5fdnlnc1Q0eXAyNnpKTlMxeiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9tb3ZpZy5nYS9tN05EQ0JKWCcsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF9HYjhMWGIyVnBocmJMZEdrID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfR2I4TFhiMlZwaHJiTGRHayAhPT0gJ3VuZGVmaW5lZCcgJiYgX0diOExYYjJWcGhyYkxkR2sgIT09IG51bGwpIHsKICAgICAgICB2YXIgX2QzR3FaOHhXWjROSlRiV1ogPSBKU09OLnBhcnNlKF9HYjhMWGIyVnBocmJMZEdrKTsKICAgICAgICB2YXIgXzkxNFlwVFM3Um5oamJYNksgPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfZDNHcVo4eFdaNE5KVGJXWi5jcmVhdGVkX2F0ICsgd2luZG93Ll92eWdzVDR5cDI2ekpOUzF6LnR0bCA8IF85MTRZcFRTN1JuaGpiWDZLKSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfcWhxTW1WTUQ5bTg3WlBKeiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF82Mk5yejlmeDlUYktReFNaID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgX2g0WFhYcjFmRFhwYlpYSkMgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF9oNFhYWHIxZkRYcGJaWEpDICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF9oNFhYWHIxZkRYcGJaWEpDICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgX2g0WFhYcjFmRFhwYlpYSkMgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgX2g0WFhYcjFmRFhwYlpYSkMgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF9oNFhYWHIxZkRYcGJaWEpDICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF9oNFhYWHIxZkRYcGJaWEpDICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fdnlnc1Q0eXAyNnpKTlMxei5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfcWhxTW1WTUQ5bTg3WlBKeiAhPT0gJ3VuZGVmaW5lZCcgJiYgX3FocU1tVk1EOW04N1pQSnogJiYgd2luZG93Ll92eWdzVDR5cDI2ekpOUzF6LnVuaXF1ZSkgewogICAgICAgIF9oNFhYWHIxZkRYcGJaWEpDICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoX3FocU1tVk1EOW04N1pQSnopOwogICAgfQogICAgaWYgKHR5cGVvZiBfNjJOcno5Zng5VGJLUXhTWiAhPT0gJ3VuZGVmaW5lZCcgJiYgXzYyTnJ6OWZ4OVRiS1F4U1ogJiYgd2luZG93Ll92eWdzVDR5cDI2ekpOUzF6LnVuaXF1ZSkgewogICAgICAgIF9oNFhYWHIxZkRYcGJaWEpDICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfNjJOcno5Zng5VGJLUXhTWik7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fdnlnc1Q0eXAyNnpKTlMxei5SX1BBVEggKyBfaDRYWFhyMWZEWHBiWlhKQzsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" -/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var -;var et_post_id='3324';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Alimentación balanceada: 5 recetas para conseguirla | Escuela ELBS</title>
+	<meta name="description" content="¿Estás buscando un equilibrio en tu dieta? Te presentamos 5 recetas fáciles que contribuirán a tu objetivo de conseguir una alimentación balanceada" />
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Alimentación balanceada: 5 recetas para conseguirla | Escuela ELBS" />
+	<meta property="og:description" content="¿Estás buscando un equilibrio en tu dieta? Te presentamos 5 recetas fáciles que contribuirán a tu objetivo de conseguir una alimentación balanceada" />
+	<meta property="og:url" -/recetas-alimentacion-balanceada/" />
+	<meta property="og:site_name" content="Escuela ELBS" />
+	<meta property="article:publisher" content="https://www.facebook.com/escuelaelbs/" />
+	<meta property="article:published_time" content="2020-04-28T08:48:22+00:00" />
+	<meta property="og:image" -/wp-content/uploads/alimentacion-balanceada.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="600" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@ELBS_School" />
+	<meta name="twitter:site" content="@ELBS_School" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Meri" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="5 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"-","name":"ELBS",","sameAs":["https://www.facebook.com/escuelaelbs/","https://twitter.com/ELBS_School"],"logo":{"@type":"ImageObject","@id":"","inLanguage":"es","url":"з-/wp-content/uploads/ELBS-3.png","contentUrl":"з-/wp-content/uploads/ELBS-3.png","width":580,"height":263,"caption":"ELBS"},"image":{"@id":""}},{"@type":"WebSite","@id":"","url":"/","name":"Escuela ELBS","description":"Escuela ELBS - Escuela de Liderazgo","publisher":{"@id":""},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":""},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"ImageObject","@id":"","inLanguage":"es","url":"з-/wp-content/uploads/alimentacion-balanceada.jpg","contentUrl":"з-/wp-content/uploads/alimentacion-balanceada.jpg","width":1000,"height":600,"caption":"Recetas para tu alimentaci\u00f3n balanceada"},{"@type":"WebPage","@id":"",,"name":"Alimentaci\u00f3n balanceada: 5 recetas para conseguirla | Escuela ELBS","isPartOf":{"@id":""},"primaryImageOfPage":{"@id":""},"datePublished":"2020-04-28T08:48:22+00:00","dateModified":"2020-04-28T08:48:22+00:00","description":"\u00bfEst\u00e1s buscando un equilibrio en tu dieta? Te presentamos 5 recetas f\u00e1ciles que contribuir\u00e1n a tu objetivo de conseguir una alimentaci\u00f3n balanceada","breadcrumb":{"@id":},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":[""]}]},{"@type":"BreadcrumbList",,"itemListElement":[{"@type":"ListItem","position":1,"name":"Portada",},{"@type":"ListItem","position":2,"name":"Blog","item":""},{"@type":"ListItem","position":3,"name":"5 recetas f\u00e1ciles que contribuir\u00e1n a tu alimentaci\u00f3n balanceada"}]},{"@type":"Article","@id":"","isPartOf":{"@id":"},"author":{"@id":"https://e/scuelaelbs.com#/schema/person/f2e5a4e5},"headline":"5 recetas f\u00e1ciles que contribuir\u00e1n a tu alimentaci\u00f3n balanceada","datePublished":"2020-04-28T08:48:22+00:00","dateModified":"2020-04-28T08:48:22+00:00","mainEntityOfPage":{"@id":"з-/recetas-alimentacion-balanceada/#webpage"},"wordCount":1081,"publisher":{"@id":"з-/#organization"},"image":{"@id":"з-/recetas-alimentacion-balanceada/#primaryimage"},"thumbnailUrl":"з-/wp-content/uploads/alimentacion-balanceada.jpg","articleSection":["Salud y Deporte"],"inLanguage":"es"},{"@type":"Person","@id":"з-/#/schema/person/f2e5a4e558466852b5eaa06ab7812b18","name":"Meri"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Escuela ELBS &raquo; Feed" -/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Escuela ELBS &raquo; Feed de los comentarios" -/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/escuelaelbs.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="Divi - Fill v.1.0.0" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-vendors-style-css'  href='plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='plugins/woocommerce/packages/woocommerce-blocks/build/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='plugins/webtoffee-gdpr-cookie-consent/public/css/cookie-law-info-public.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='plugins/webtoffee-gdpr-cookie-consent/public/css/cookie-law-info-gdpr.css' type='text/css' media='all' />
+<style id='cookie-law-info-gdpr-inline-css' type='text/css'>
+.cli-modal-content, .cli-tab-content { background-color: #ffffff; }.cli-privacy-content-text, .cli-modal .cli-modal-dialog, .cli-tab-container p, a.cli-privacy-readmore { color: #000000; }.cli-tab-header { background-color: #f2f2f2; }.cli-tab-header, .cli-tab-header a.cli-nav-link,span.cli-necessary-caption,.cli-switch .cli-slider:after { color: #000000; }.cli-switch .cli-slider:before { background-color: #ffffff; }.cli-switch input:checked + .cli-slider:before { background-color: #ffffff; }.cli-switch .cli-slider { background-color: #e3e1e8; }.cli-switch input:checked + .cli-slider { background-color: #28a745; }.cli-modal-close svg { fill: #000000; }.cli-tab-footer .wt-cli-privacy-accept-all-btn { background-color: #00acad; color: #ffffff}.cli-tab-footer .wt-cli-privacy-accept-btn { background-color: #00acad; color: #ffffff}.cli-tab-header a:before{ border-right: 1px solid #000000; border-bottom: 1px solid #000000; }
+</style>
+<link rel='stylesheet' id='woocommerce-layout-css'  href='plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='wcz-styles-css'  href='plugins/woocustomizer/assets/css/wcz-styles.css' type='text/css' media='only screen and (min-width: 768px)' />
+<link rel='stylesheet' id='ez-icomoon-css'  href='plugins/easy-table-of-contents/vendor/icomoon/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-toc-css'  href='plugins/easy-table-of-contents/assets/css/screen.min.css' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}
+</style>
+<link rel='stylesheet' id='wc-gateway-ppec-frontend-css'  href='plugins/woocommerce-gateway-paypal-express-checkout/assets/css/wc-gateway-ppec-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='Divi-css'  href='themes/Divi/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='themes/Divi-fill/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='css/dashicons.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":["refWeb","_gcl_au","_fbp","fr","_ga","_gid","_gat_UA-102565852-2","TawkConnectionTime","ss","YSC","VISITOR_INFO1_LIVE","IDE","PHPSESSID","test_cookie"],"non_necessary_cookies":{"necessary":["PHPSESSID"],"non-necessary":["test_cookie"],"analytics":["_gcl_au","_ga","_gid"],"advertisement":["_fbp","fr","VISITOR_INFO1_LIVE","IDE"],"functional":["TawkConnectionTime","ss"],"performance":["YSC"]},"cookielist":{"necessary":{"id":72,"status":true,"priority":0,"title":"Necesario","strict":true,"default_state":false,"ccpa_optout":false,"loadonstart":false},"non-necessary":{"id":73,"status":true,"priority":0,"title":"No necesario","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"analytics":{"id":74,"status":true,"priority":0,"title":"Anal\u00edtica","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"advertisement":{"id":76,"status":true,"priority":0,"title":"Publicitario","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"functional":{"id":77,"status":true,"priority":0,"title":"Functional","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"performance":{"id":78,"status":true,"priority":0,"title":"Rendimiento","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false}},"ajax_url":"https:\/\/escuelaelbs.com\/wp-admin\/admin-ajax.php","current_lang":"es","security":"9d97d0459b","eu_countries":["GB"],"geoIP":"disabled","use_custom_geolocation_api":"","custom_geolocation_api":"https:\/\/geoip.cookieyes.com\/geoip\/checker\/result.php","consentVersion":"1","strictlyEnabled":["necessary","obligatoire"],"cookieDomain":"","privacy_length":"250","ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","ccpaType":"gdpr","triggerDomRefresh":"","secure_cookies":""};
+var log_object = {"ajax_url":"https:\/\/escuelaelbs.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js' id='cookie-law-info-js'></script>
+<script type='text/javascript' src='themes/Divi/core/admin/js/es6-promise.auto.min.js' id='es6-promise-js'></script>
+<script type='text/javascript' id='et-core-api-spam-recaptcha-js-extra'>
+/* <![CDATA[ */
+var et_core_api_spam_recaptcha = {"site_key":"","page_action":{"action":"recetas_alimentacion_balanceada"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='themes/Divi/core/admin/js/recaptcha.js' id='et-core-api-spam-recaptcha-js'></script>
+<link rel="https://api.w.org/" -/wp-json/" /><link rel="alternate" type="application/json" -/wp-json/wp/v2/posts/3324" /><link rel="EditURI" type="application/rsd+xml" title="RSD" -/xmlrpc.php?rsd" />
+<link rel='shortlink' href='з-/?p=3324' />
+<link rel="alternate" type="application/json+oembed" -/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fescuelaelbs.com%2Frecetas-alimentacion-balanceada%2F" />
+<link rel="alternate" type="text/xml+oembed" -/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fescuelaelbs.com%2Frecetas-alimentacion-balanceada%2F&#038;format=xml" />
+		<!-- Google Tag Manager -->
+		<script type="text/plain" data-cli-class="cli-blocker-script" data-cli-label="Administrador de etiquetas de Google"  data-cli-script-type="analytics" data-cli-block="true" data-cli-block-if-ccpa-optout="false" data-cli-element-position="head">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TRSHGBW');</script>
+		<!-- End Google Tag Manager -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+<!-- Facebook Pixel Code -->
+<script type="text/plain" data-cli-class="cli-blocker-script" data-cli-label="Código de Píxel de Facebook"  data-cli-script-type="analytics" data-cli-block="true" data-cli-block-if-ccpa-optout="false" data-cli-element-position="head">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+</script>
+<!-- End Facebook Pixel Code -->
+<script type="text/plain" data-cli-class="cli-blocker-script" data-cli-label="Código de Píxel de Facebook"  data-cli-script-type="analytics" data-cli-block="true" data-cli-block-if-ccpa-optout="false" data-cli-element-position="head">
+  fbq('init', '2191314524504887', {}, {
+    "agent": "wordpress-5.8.1-3.0.5"
+});
+</script><script type="text/plain" data-cli-class="cli-blocker-script" data-cli-label="Código de Píxel de Facebook"  data-cli-script-type="analytics" data-cli-block="true" data-cli-block-if-ccpa-optout="false" data-cli-element-position="head">
+  fbq('track', 'PageView', []);
+</script>
+<!-- Facebook Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+src="https://www.facebook.com/tr?id=2191314524504887&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+<link rel="icon" -/wp-content/uploads/2017/06/cropped-FAVICON-32x32.jpg" sizes="32x32" />
+<link rel="icon" -/wp-content/uploads/2017/06/cropped-FAVICON-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" -/wp-content/uploads/2017/06/cropped-FAVICON-180x180.jpg" />
+<meta name="msapplication-TileImage" -/wp-content/uploads/2017/06/cropped-FAVICON-270x270.jpg" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="et-cache/global/et-divi-customizer-global-16312626950249.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
+<script
+	type="text/javascript"
+	src="https://cdn.aplazame.com/aplazame.js?public_key=1afa81ff80124dced0e39fcfffc7115abc4dfcd8&amp;sandbox=false"
+	async defer
+></script>
+</head>
+<body class="post-template-default single single-post postid-3324 single-format-standard theme-Divi woocommerce-no-js et_pb_button_helper_class et_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_two_panels et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_centered et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRSHGBW"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<div id="page-container">
+
+					<div id="top-header">
+			<div class="container clearfix">
+
+			
+				<div id="et-info">
+									<span id="et-info-phone"><a href="tel:+34910059731">91 005 97 31</a> - <a href="tel:+34973980176">973 98 01 76</a></span>
+				
+									<a href="mailto:comercial@escuelaelbs.com"><span id="et-info-email">comercial@escuelaelbs.com</span></a>
+				
+				<link rel="stylesheet" id="wds_font-awesome-css" href="themes/Divi-fill/includes/font-awesome/font-awesome.css@ver=1.0.css" type="text/css" media="all" />
+<ul class="et-social-icons">
+
+<li class="et-social-icon et-social-whatsapp">
+<a href="https://web.whatsapp.com/send/?phone=34639163741&text=Hola+%2AEscuela+ELBS%2A%2C+solicito+informaci%C3%B3n." class="icon" target="_blank" style="font-size: 12px;">
+<i class="fa fa-whatsapp" style="font-weight: bold;font-size: 16px;"></i>
+&nbsp;&nbsp;+34 639 163 741
+<span>WhatsApp</span>
+</a>
+</li>
+	<li class="et-social-icon et-social-facebook">
+		<a href="https://www.facebook.com/escuelaelbs/" class="icon" target="_blank">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="https://twitter.com/ELBS_School" class="icon" target="_blank">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="https://www.instagram.com/escuela_elbs_formacion/" class="icon" target="_blank">
+			<span>Instagram</span>
+		</a>
+	</li>
+<li class="et-social-icon et-social-linkedin">
+	<a href="https://www.linkedin.com/company/elbs-escueladeliderazgo/" class="icon" target="_blank">
+		<span>LinkedIn</span>
+	</a>
+</li>
+<li class="et-social-icon et-social-youtube">
+<a href="https://www.youtube.com/channel/UChjeixMXA3DJu9pdeW9jSdQ?" class="icon" target="_blank">
+<span>YouTube</span>
+</a>
+</li>
+</ul>				</div> <!-- #et-info -->
+
+			
+				<div id="et-secondary-menu">
+				<div class="et_duplicate_social_icons">
+								<link rel="stylesheet" id="wds_font-awesome-css" href="themes/Divi-fill/includes/font-awesome/font-awesome.css@ver=1.0.css" type="text/css" media="all" />
+<ul class="et-social-icons">
+
+<li class="et-social-icon et-social-whatsapp">
+<a href="https://web.whatsapp.com/send/?phone=34639163741&text=Hola+%2AEscuela+ELBS%2A%2C+solicito+informaci%C3%B3n." class="icon" target="_blank" style="font-size: 12px;">
+<i class="fa fa-whatsapp" style="font-weight: bold;font-size: 16px;"></i>
+&nbsp;&nbsp;+34 639 163 741
+<span>WhatsApp</span>
+</a>
+</li>
+	<li class="et-social-icon et-social-facebook">
+		<a href="https://www.facebook.com/escuelaelbs/" class="icon" target="_blank">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="https://twitter.com/ELBS_School" class="icon" target="_blank">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="https://www.instagram.com/escuela_elbs_formacion/" class="icon" target="_blank">
+			<span>Instagram</span>
+		</a>
+	</li>
+<li class="et-social-icon et-social-linkedin">
+	<a href="https://www.linkedin.com/company/elbs-escueladeliderazgo/" class="icon" target="_blank">
+		<span>LinkedIn</span>
+	</a>
+</li>
+<li class="et-social-icon et-social-youtube">
+<a href="https://www.youtube.com/channel/UChjeixMXA3DJu9pdeW9jSdQ?" class="icon" target="_blank">
+<span>YouTube</span>
+</a>
+</li>
+</ul>
+							</div><ul id="et-secondary-nav" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a -/cursos-online/">Cursos Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-198"><a -/mi-cuenta/edit-account/">Mi Cuenta</a></li>
+</ul><a -/carrito/" class="et-cart-info">
+				<span>0 elementos</span>
+			</a>				</div> <!-- #et-secondary-menu -->
+
+			</div> <!-- .container -->
+		</div> <!-- #top-header -->
+		
+	
+			<header id="main-header" data-height-onload="157">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a -/">
+						<img src="uploads/ELBS-3.png" alt="Escuela ELBS" id="logo" data-height-percentage="81" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="157" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-71"><a -/">Inicio</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a -/quienes-somos/">Quiénes Somos</a></li>
+<li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a -/oferta-formativa/">Oferta Formativa</a></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a -/sistema-educativo/">Sistema Educativo</a></li>
+<li id="menu-item-1696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1696"><a -/elbs-opiniones/">ELBS Opiniones</a></li>
+<li id="menu-item-1792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1792"><a href="-category/ofertas-de-practicas-empleo/">Empleo y Prácticas</a></li>
+<li id="menu-item-1695" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1695"><a -/blog/">Blog</a></li>
+</ul>						</nav>
+					
+					
+					
+										<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="з-/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-3324" class="et_pb_post post-3324 post type-post status-publish format-standard has-post-thumbnail hentry category-salud-y-deporte">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">5 recetas fáciles que contribuirán a tu alimentación balanceada</h1>
+
+						<p class="post-meta"><span class="published">Abr 28, 2020</span> | <a -/category/salud-y-deporte/" rel="category tag">Salud y Deporte</a></p><img src="uploads/alimentacion-balanceada.jpg" alt="Recetas para tu alimentación balanceada" class="" width='1080' height='675' srcset="з-/wp-content/uploads/alimentacion-balanceada.jpg 1000w, з-/wp-content/uploads/alimentacion-balanceada-980x588.jpg 980w, з-/wp-content/uploads/alimentacion-balanceada-480x288.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" />
+												</div> <!-- .et_post_meta_wrapper -->
+				
+					<div class="entry-content">
+					<p>Una de las formas de tener una buena salud es cuidar nuestra alimentación, comer de una forma adecuada y nutritiva, manteniendo una <strong>alimentación balanceada</strong>. Para muchos es difícil seguir una dieta equilibrada, ya que la llamada “comida rápida” llama mucho más la atención por su sabor, pero sin duda esa es la peor elección para llevar un estilo de vida saludable. Si estás interesado en formarte en este ámbito, no te pierdas nuestro <span style="text-decoration: underline;"><a -/oferta-formativa/programa-superior-dietetica/">Programa Superior en Dietética y Nutrición + Coaching Nutricional (Doble Titulación)</a></span>.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_17 counter-hierarchy counter-decimal ez-toc-grey">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title">&Iacute;ndice de contenidos</p>
+<span class="ez-toc-title-toggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" style="display: none;"><i class="ez-toc-glyphicon ez-toc-icon-toggle"></i></a></span></div>
+<nav><ul class="ez-toc-list ez-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="index.html#%C2%BFQue_es_la_dieta_balanceada" title="¿Qué es la dieta balanceada?">¿Qué es la dieta balanceada?</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href="index.html#5_recetas_faciles_para_conseguir_una_alimentacion_balanceada" title="5 recetas fáciles para conseguir una alimentación balanceada">5 recetas fáciles para conseguir una alimentación balanceada</a><ul class="ez-toc-list-level-4"><li class="ez-toc-heading-level-4"><a class="ez-toc-link ez-toc-heading-3" href="index.html#1-_PASTA_CON_VERDURAS_para_una_persona" title="1-. PASTA CON VERDURAS (para una persona)">1-. PASTA CON VERDURAS (para una persona)</a></li><li class="ez-toc-page-1 ez-toc-heading-level-4"><a class="ez-toc-link ez-toc-heading-4" href="index.html#2-_POLLO_AL_HORNO_CON_VERDURAS" title="2-. POLLO AL HORNO CON VERDURAS">2-. POLLO AL HORNO CON VERDURAS</a></li><li class="ez-toc-page-1 ez-toc-heading-level-4"><a class="ez-toc-link ez-toc-heading-5" href="index.html#3-_HAMBURGUESAS_DE_LENTEJAS" title="3-. HAMBURGUESAS DE LENTEJAS">3-. HAMBURGUESAS DE LENTEJAS</a></li><li class="ez-toc-page-1 ez-toc-heading-level-4"><a class="ez-toc-link ez-toc-heading-6" href="index.html#4-_CREMA_DE_GUISANTES_CON_HUEVO_COCIDO" title="4-. CREMA DE GUISANTES CON HUEVO COCIDO">4-. CREMA DE GUISANTES CON HUEVO COCIDO</a></li><li class="ez-toc-page-1 ez-toc-heading-level-4"><a class="ez-toc-link ez-toc-heading-7" href="index.html#5-_TALLARINES_DE_CALABACIN_CON_PESTO_ROJO" title="5-. TALLARINES DE CALABACÍN CON PESTO ROJO">5-. TALLARINES DE CALABACÍN CON PESTO ROJO</a></li></ul></li></ul></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="%C2%BFQue_es_la_dieta_balanceada"></span>¿Qué es la dieta balanceada?<span class="ez-toc-section-end"></span></h2>
+<p>La <strong>dieta balanceada</strong> consiste en ingerir todos los alimentos necesarios para estar sanos y bien nutridos en proporciones adecuadas. Para ello debemos tener una dieta completa, que debe contemplar todos los nutrientes necesarios. También debe estar equilibrada en su justa medida, introduciendo los diferentes grupos de alimentos para conseguir un buen balance. Asimismo, la base de una alimentación balanceada es la personalización de la dieta: esta debe cumplir los requisitos nutricionales de quien la consume, ya que la dieta va a ser diferente para cada persona según su estado nutricional, salud y edad. De esta manera, cada alimento contribuye a convertir nuestra dieta en un sistema de alimentación balanceada de una manera especial.</p>
+<h3><span class="ez-toc-section" id="5_recetas_faciles_para_conseguir_una_alimentacion_balanceada"></span>5 recetas fáciles para conseguir una alimentación balanceada<span class="ez-toc-section-end"></span></h3>
+<p>A continuación, os dejamos 5 ejemplos de platos fáciles y rápidos de hacer que os ayudarán a mantener una <strong>dieta equilibrada</strong>.</p>
+<h4><span class="ez-toc-section" id="1-_PASTA_CON_VERDURAS_para_una_persona"></span>1-. PASTA CON VERDURAS (para una persona)<span class="ez-toc-section-end"></span></h4>
+<p>Ingredientes:</p>
+<ul>
+<li>80 gramos de pasta integral.</li>
+<li>¼ de cebolla.</li>
+<li>Tomate triturado (no frito).</li>
+<li>Setas variadas.</li>
+<li>Espárragos verdes.</li>
+<li>1 pimiento rojo.</li>
+<li>Orégano.</li>
+<li>Sal y pimienta.</li>
+</ul>
+<p>Preparación:</p>
+<ul>
+<li>Hierve la pasta con una pizca la sal. Mientras, prepara el sofrito de verduras.</li>
+<li>Limpia y corta las verduras. Pon un poco de aceite en la sartén y añade la cebolla picada. Cuando esté blanquecina, añade los vegetales por orden: primero los espárragos, después el pimiento y luego las setas.</li>
+<li>Cuando los alimentos estén listos, baja el fuego y tira el tomate triturado para que se mezcle con las verduras. Añade un poco más de sal y pimienta y deja cocer el tomate.</li>
+<li>Una vez todo listo, solo hay que mezclar la pasta con el sofrito y poner un poco de orégano para dar el toque final, ¡Y a comer esta receta de alimentación balanceada!</li>
+</ul>
+<h4><span class="ez-toc-section" id="2-_POLLO_AL_HORNO_CON_VERDURAS"></span>2-. POLLO AL HORNO CON VERDURAS<span class="ez-toc-section-end"></span></h4>
+<p>Ingredientes:</p>
+<ul>
+<li>1 muslo de pollo.</li>
+<li>Pimiento rojo.</li>
+<li>Cebolla.</li>
+<li>Alcachofas.</li>
+<li>Sal y pimienta.</li>
+</ul>
+<p>Preparación:</p>
+<ul>
+<li>Precalienta el horno a una temperatura de 200º por arriba y por abajo.</li>
+<li>Añade la cebolla cortada en una bandeja junto al pimiento también cortado, las alcachofas y el muslo de pollo.</li>
+<li>Salpimienta todos los ingredientes y echa un chorrito de aceite de oliva sobre la carne.</li>
+<li>Mete la bandeja con todos los ingredientes al horno durante 30 o 40 minutos a una temperatura de 180º por arriba y por abajo. ¡Que aproveche!</li>
+</ul>
+<h4><span class="ez-toc-section" id="3-_HAMBURGUESAS_DE_LENTEJAS"></span>3-. HAMBURGUESAS DE LENTEJAS<span class="ez-toc-section-end"></span></h4>
+<p>Ingredientes:</p>
+<ul>
+<li>1 bote de lentejas cocidas de 500g.</li>
+<li>1 zanahoria.</li>
+<li>1 huevo.</li>
+<li>½ cebolla.</li>
+<li>10 cucharadas de pan rallado.</li>
+<li>Aceite de oliva virgen.</li>
+<li>Sal.</li>
+</ul>
+<p>Preparación:</p>
+<ul>
+<li>Lava, pela y corta la zanahoria y la cebolla a taquitos pequeños.</li>
+<li>Pon a calentar una sartén a fuego medio, aboca un poco de aceite e incorpórale la cebolla hasta que veas que está más transparente.</li>
+<li>Añade la zanahoria, junto con un poco de sal y pimienta y deja que se cueza durante unos minutos.</li>
+<li>Mientras las verduras están en el fuego, escurre las lentejas en un colador con agua fría, ponlas en un bol grande y aplástalas con un tenedor.</li>
+<li>Cuando la verdura esté lista, añade las lentejas y mézclalo todo. Añade el huevo a la mezcla y remueve bien todos los alimentos.</li>
+<li>Finalmente, pon el pan rallado en un plato y haz la forma de las hamburguesas con la masa anterior.</li>
+<li>Escalfa una sartén y haz las hamburguesas 4 minutos por cada lado hasta que estén torradas. ¡Buen provecho!</li>
+</ul>
+<h4><span class="ez-toc-section" id="4-_CREMA_DE_GUISANTES_CON_HUEVO_COCIDO"></span>4-. CREMA DE GUISANTES CON HUEVO COCIDO<span class="ez-toc-section-end"></span></h4>
+<p>Ingredientes:</p>
+<ul>
+<li>¼ de puerro.</li>
+<li>1 patata pequeña.</li>
+<li>3 puñados de guisantes.</li>
+<li>1 huevo.</li>
+</ul>
+<p>Preparación:</p>
+<ul>
+<li>Rehoga el puerro y la patata en una cazuelita con un hilo de aceite durante unos 5 minutos.</li>
+<li>Incorpoa los guisantes y añade agua hasta que queden cubiertos.</li>
+<li>Cuécelo durante 15 minutos más y después tritúralo.</li>
+<li>Cuando esté listo, ponlo en un plato hondo y procede a cocer el huevo.</li>
+<li>Un truco para cocer el huevo y que quede perfecto es sacar los huevos de la nevera un rato antes de ponerlos a cocer. Si no, al meterlos directamente en el agua hirviendo, se pueden agrietar fácilmente.</li>
+<li>Puedes darle el toque final añadiendo algunas virutas de jamón u hojitas de menta. ¡Ya tenemos otra receta para la alimentación balanceada!</li>
+</ul>
+<h4><span class="ez-toc-section" id="5-_TALLARINES_DE_CALABACIN_CON_PESTO_ROJO"></span>5-. TALLARINES DE CALABACÍN CON PESTO ROJO<span class="ez-toc-section-end"></span></h4>
+<p>Ingredientes:</p>
+<ul>
+<li>2 calabacines.</li>
+<li>6 tomates secos.</li>
+<li>1 cebolleta.</li>
+<li>40g de avellanas.</li>
+<li>1 diente de ajo.</li>
+<li>50g de queso parmesano rallado.</li>
+<li>Aceite de oliva.</li>
+<li>Sal.</li>
+</ul>
+<p>Preparación:</p>
+<ul>
+<li>Pon los tomates secos en un cuenco cubiertos con agua templada y déjalos en remojo durante unos 15 minutos, para elaborar después el pesto rojo.</li>
+<li>Para hacer los tallarines, primero lávalos y sécalos. Después córtalos a láminas finas.</li>
+</ul>
+<p><strong>Para elaborar el pesto rojo</strong></p>
+<ul>
+<li>Limpia la cebolleta y corta sus raíces, extraeyendo la primera capa y la parte más dura. Pela también el ajo.</li>
+<li>Escurre los tomates que estaban en remojo.</li>
+<li>Retira la piel de las avellanas.</li>
+<li>Pica todos los ingredientes en trozos muy pequeños y mézclalos en un cuenco.</li>
+<li>Finalmente, añade el queso parmesano y 3 cucharadas de aceite.</li>
+<li>Remueve el conjunto hasta que todo quede bien integrado.</li>
+<li>Cubre la mezcla con film de cocina y deja reposar el pesto hasta el momento de servir.</li>
+</ul>
+<p><strong>Elaboramos el plato final</strong></p>
+<ul>
+<li>Escalda los tallarines de calabacín en agua hirviendo con ½ cucharadita de sal durante un par de minutos.</li>
+<li>Déjalos escurrir en un colador.</li>
+<li>Finalmente, repártelos en 4 platos con el pesto rojo por encima. ¡Que aproveche!</li>
+</ul>
+<p>Estas cinco recetas son muy fáciles de hacer y están realmente deliciosas. Te ayudarán a ver que comer sano también puede ser divertido y además te sentirás mejor contigo mismo. Puedes utilizarlas para mantener una dieta balanceada junto y unirlo a tu rutina de ejercicio diario.</p>
+					</div> <!-- .entry-content -->
+					<div class="et_post_meta_wrapper">
+										</div> <!-- .et_post_meta_wrapper -->
+				</article> <!-- .et_pb_post -->
+
+						</div> <!-- #left-area -->
+
+				<div id="sidebar">
+		<div id="text-4" class="et_pb_widget widget_text"><h4 class="widgettitle">Solicita más información</h4>			<div class="textwidget"><div role="form" class="wpcf7" id="wpcf7-f4978-o1" lang="es-ES" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="index.html#wpcf7-f4978-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="4978" />
+<input type="hidden" name="_wpcf7_version" value="5.1.7" />
+<input type="hidden" name="_wpcf7_locale" value="es_ES" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4978-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+</div>
+<div style="display:none;">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script><script>$( document ).ready(function() { $("#enviar").after("<span id='errorEnviar' style='display:none;'></br>* Acepte la primera casilla de la nota informativa para enviar.</span>");});</script>
+</div>
+<p> Nombre (*)<br />
+    <span class="wpcf7-form-control-wrap nombre"><input type="text" name="nombre" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required nombre" id="nombre" aria-required="true" aria-invalid="false" /></span> </p>
+<p> Apellidos (*)<br />
+    <span class="wpcf7-form-control-wrap apellidos"><input type="text" name="apellidos" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required apellidos" id="apellidos" aria-required="true" aria-invalid="false" /></span> </p>
+<p> Teléfono (*)<br />
+<span class="wpcf7-form-control-wrap telefono"><input type="tel" name="telefono" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel telefono" id="telefono" aria-required="true" aria-invalid="false" /></span></p>
+<p> Tu correo electrónico (*)<br />
+    <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email" id="emailForm7" aria-required="true" aria-invalid="false" /></span> </p>
+<p> Indícanos en qué curso estás interesado (*)<br />
+<span class="wpcf7-form-control-wrap curso"><input type="text" name="curso" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required curso" id="curso" aria-required="true" aria-invalid="false" /></span></p>
+<p> Mensaje<br />
+    <span class="wpcf7-form-control-wrap mensaje"><textarea name="mensaje" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea mensaje" id="mensaje" aria-invalid="false"></textarea></span> </p>
+<div>
+<input type="hidden" name="datos_relacionats_hidden" value="0" class="wpcf7-form-control wpcf7-hidden" id="datos_relacionats_hidden" />
+</div>
+<p><span class="wpcf7-form-control-wrap product-sku"><input type="hidden" name="product-sku" value="" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden" id="product-sku" aria-invalid="false" /></span></p>
+<p style="font-size:0.7em;width: 305px;text-align: justify;line-height:10px"><span class="wpcf7-form-control-wrap datos_grup_hidden"><span class="wpcf7-form-control wpcf7-checkbox datos_grup_hidden" id="datos_grup_hidden"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="datos_grup_hidden[]" value="1" /><span class="wpcf7-list-item-label">1</span></label></span></span></span> Ud. consiente que - incluso finalizada nuestra relación - ESTRATEGIAS DE FORMACIÓN PERSONAL Y PROFESIONAL, S.L. comunique sus datos a las empresas del GRUPO ESNECA FORMACIÓN relacionadas en www.grupoesneca.com para que desarrollen su actividad en los sectores editorial, formación y cultura, para que le informen (telefónica y/o correo electrónico) de sus productos y/o servicios.</p>
+<p style="font-size:0.8em;width: 305px;text-align: justify;">Trataremos sus datos para informarle (vía postal, telefónica, presencial y/o telemática) sobre nuestros productos y/o servicios. En la política de privacidad conocerás tus derechos y gestionarás la baja.</p>
+<p id="p_form_checkbox" style="width: 310px;text-align: justify;"><span class="wpcf7-form-control-wrap datos_ficher_hidden"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required datos_ficher_hidden" id="datos_ficher_hidden"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="datos_ficher_hidden[]" value="1" /><span class="wpcf7-list-item-label">1</span></label></span></span></span> He leído y acepto la <a -/informacion-legal/"><span style="text-decoration: underline;">política de privacidad, las condiciones de uso</span></a> </p>
+<p><input type="submit" value="ENVIAR" class="wpcf7-form-control wpcf7-submit enviar" id="enviar" /></p>
+<style>.wpcf7-list-item-label{
+	display:none;
+}</style>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+</div>
+		</div> <!-- end .et_pb_widget --><div id="woocommerce_product_categories-2" class="et_pb_widget woocommerce widget_product_categories"><h4 class="widgettitle">Oferta Formativa</h4><ul class="product-categories"><li class="cat-item cat-item-49"><a -/categoria-producto/cursos-liderazgo-comunicacion/">Liderazgo y Comunicación</a></li>
+<li class="cat-item cat-item-52"><a -/categoria-producto/cursos-administracion-gestion-empresarial/">Administración y Gestión</a></li>
+<li class="cat-item cat-item-53"><a -/categoria-producto/cursos-rrhh-gestion-personal/">Recursos Humanos</a></li>
+<li class="cat-item cat-item-50"><a -/categoria-producto/cursos-psicologia-coaching/">Psicología y Coaching</a></li>
+<li class="cat-item cat-item-56"><a -/categoria-producto/cursos-marketing-publicidad-ventas/">Marketing, Publicidad y Ventas</a></li>
+<li class="cat-item cat-item-55"><a -/categoria-producto/cursos-salud-deporte/">Salud y Deporte</a></li>
+<li class="cat-item cat-item-57"><a -/categoria-producto/cursos-estetica-moda/">Estética y Moda</a></li>
+<li class="cat-item cat-item-58"><a -/categoria-producto/cursos-derecho-investigacion/">Derecho e Investigación</a></li>
+<li class="cat-item cat-item-59"><a -/categoria-producto/cursos-artes-oficios/">Artes y Oficios</a></li>
+</ul></div> <!-- end .et_pb_widget -->	</div> <!-- end #sidebar -->
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
+	</div> <!-- #main-content -->
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+    <div id="footer-widgets" class="clearfix">
+		<div class="footer-widget"><div id="text-2" class="fwidget et_pb_widget widget_text"><h4 class="title">Contacta con nosotros</h4>			<div class="textwidget"><p>Sede Lleida:<br />
+
+Calle Santa Prisca 5, Bajos<br />
+</p>
+<p><br />
+Via San Raffaele, 1<br />
+</p>
+<p><br />
+</p>
+<p><a id="WhatsAppFooter" class="icon" style="display: inline-block;" href="https://web.whatsapp.com/send/?phone=34639163741&amp;text=Hola%20Escuela%20ELBS%20solicito%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp" style="font-weight: bold; font-size: 16px; margin-right: 3px;"></i> +34 639 163 741</a><br />
+<a href="mailto:comercial@escuelaelbs.com ">comercial@escuelaelbs.com<br />
+</a></p>
+<p>&nbsp;</p>
+<p><u><a -/informacion-legal/">Información Legal</a></u><br />
+<u><a href="-tablon-anuncios-estrategias-formacion-personal-profesional/">Tablón de Anuncios</a></u><br />
+<span style="text-decoration: underline;"><a -/mapa-del-sitio/">Mapa del Sitio</a></span></p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><a href="https://aplazame.com/" target="_blank" rel="noopener">Trabajamos con Aplázame</a></span></p>
+</div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="text-6" class="fwidget et_pb_widget widget_text"><h4 class="title">Asociados con</h4>			<div class="textwidget"><p><img class="aligncenter" src="uploads/logo_cecap-2.png" /></p>
+</div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="text-3" class="fwidget et_pb_widget widget_text"><h4 class="title">Con el reconocimiento</h4>			<div class="textwidget"><p><img class="aligncenter" src="uploads/CUMLAUDE-2021.png" align="center" /><br />
+<img class="aligncenter" src="uploads/elbs.png" /><img class="aligncenter" src="uploads/SELLO-DE-CALIDAD-FINANCIAL-MAGAZINE-02.png" /></p>
+</div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="text-5" class="fwidget et_pb_widget widget_text"><h4 class="title">Agencia Universitaria DQ</h4>			<div class="textwidget"><p><img class="aligncenter" src="uploads/Logo-Programa-Reconocimiento-Universitario-Internacional-DQ.png" align="center" /></p>
+</div>
+		</div> <!-- end .fwidget --><div id="custom_html-2" class="widget_text fwidget et_pb_widget widget_custom_html"><h4 class="title">Tipos de pago</h4><div class="textwidget custom-html-widget"><img src="uploads/pago-3.png" alt="pagos" style="float: center" ></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget -->    </div> <!-- #footer-widgets -->
+</div>    <!-- .container -->
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">ELBS | Escuela de Liderazgo | Copyright 2021</div>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+		
+		</div> <!-- #page-container -->
+
+		    <!-- Facebook Pixel Event Code -->
+    <script type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+    <!-- End Facebook Pixel Event Code -->
+    <div id='fb-pxl-ajax-code'></div><div class="wt-cli-cookie-bar-container" data-nosnippet="true"><!--googleoff: all--><div id="cookie-law-info-bar" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="wt-cli-cookie-banner" data-cli-geo-loc="0" style="background:#fff; border:solid 1px #dbdbdb; padding:35px; box-sizing:border-box; text-align:center; font-size:14px; letter-spacing:normal;" class="wt-cli-cookie-bar"><div class="cli-wrapper"><span id="wt-cli-cookie-banner">¡Hola! Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte publicidad personalizada en base a un perfil elaborado a partir de tus hábitos de navegación (p.e. páginas visitadas). Clica <a style="color: black;text-decoration:underline" -/informacion-legal/">aquí</a> para más información. Puedes aceptar todas las cookies pulsando el botón “Aceptar”, Sin embargo, puede visitar la Configuración de cookies para proporcionar un consentimiento controlado "<a id="wt-cli-settings-btn" tabindex="0" role='button' style="display:inline-block; text-align:center; font-size:14px; line-height:20px; text-decoration:underline; border-color:rgb(255, 255, 255);"class="wt-cli-element cli_settings_button"  >Configurar</a>". <br />
+<a id="wt-cli-accept-btn" tabindex="0" role='button' style="display:inline-block; background:#04b47c; border-radius:0px; text-align:center; font-size:12px; padding:5px 8px; margin-left:10px; margin-top:15px; border:solid 0px #fff; line-height:20px;" data-cli_action="accept"  class="wt-cli-element medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" >Aceptar y Cerrar</a></span></div></div><div tabindex="0" id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Política de Cookies</span></div><div class="cli-modal" id="cliSettingsPopup" role="dialog" aria-labelledby="wt-cli-privacy-title" tabindex="-1" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button aria-label="Cerrar" type="button" class="cli-modal-close" id="cliModalClose">
+      <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+      <span class="wt-cli-sr-only">Cerrar</span>
+      </button>
+        <div class="cli-modal-body">
+
+    <div class="wt-cli-element cli-container-fluid cli-tab-container">
+        <div class="cli-row">
+                            <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+                    <div class="cli-privacy-overview">
+                        <h4 id='wt-cli-privacy-title'>Resumen de privacidad</h4>                        <div class="cli-privacy-content">
+                            <div class="cli-privacy-content-text">Este sitio web utiliza cookies para mejorar su experiencia mientras navega por el sitio web. Fuera de estas cookies, las cookies que se clasifican como necesarias se almacenan en su navegador, ya que son esenciales para el funcionamiento de las funcionalidades básicas del sitio web. También utilizamos cookies de terceros que nos ayudan a analizar y comprender cómo utiliza este sitio web. Estas cookies se almacenarán en su navegador solo con su consentimiento. También tiene la opción de optar por no recibir estas cookies. Pero la exclusión voluntaria de algunas de estas cookies puede afectar su experiencia de navegación.</div>
+                        </div>
+                        <a id="wt-cli-privacy-readmore"  tabindex="0" role="button" class="cli-privacy-readmore" data-readmore-text="Mostrar más" data-readless-text="Mostrar menos"></a>                    </div>
+                </div>
+                        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+
+                
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-necessary" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-necessary" aria-controls="wt-cli-tab-necessary" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+                                Necesario                            </a>
+                                                                                        <div class="wt-cli-necessary-checkbox">
+                                    <input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" aria-label="Necesario" data-id="checkbox-necessary" checked="checked" />
+                                    <label class="form-check-label" for="wt-cli-checkbox-necessary"> Necesario </label>
+                                </div>
+                                <span class="cli-necessary-caption">
+                                    Siempre habilitado                                </span>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-necessary" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-necessary" class="cli-tab-pane cli-fade" data-id="necessary">
+                                <p>Las cookies necesarias son absolutamente esenciales para que el sitio web funcione correctamente. Esta categoría solo incluye cookies que garantizan funcionalidades básicas y características de seguridad del sitio web. Estas cookies no almacenan ninguna información personal.
+
+<table class="wt-cli-element cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th scope="col" class="cookielawinfo-column-1">Cookie</th><th scope="col" class="cookielawinfo-column-2">Tipo</th><th scope="col" class="cookielawinfo-column-3">Duración</th><th scope="col" class="cookielawinfo-column-4">Descripción</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-2">0</td><td class="cookielawinfo-column-3">11 meses</td><td class="cookielawinfo-column-4">Esta cookie está configurada por el complemento de consentimiento de cookies de GDPR. Las cookies se utilizan para almacenar el consentimiento del usuario para las cookies en la categoría "Necesarias".
+</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-non-necessary</td><td class="cookielawinfo-column-2">0</td><td class="cookielawinfo-column-3">11 meses</td><td class="cookielawinfo-column-4">Esta cookie está configurada por el complemento de consentimiento de cookies de GDPR. Las cookies se utilizan para almacenar el consentimiento del usuario para las cookies en la categoría "No necesarias".
+</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">PHPSESSID</td><td class="cookielawinfo-column-2"></td><td class="cookielawinfo-column-3">session</td><td class="cookielawinfo-column-4">Esta cookie es nativa de las aplicaciones PHP. La cookie se utiliza para almacenar e identificar el ID de sesión único de un usuario con el fin de administrar la sesión del usuario en el sitio web. La cookie es una cookie de sesión y se elimina cuando se cierran todas las ventanas del navegador.
+</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-2">0</td><td class="cookielawinfo-column-3">11 meses</td><td class="cookielawinfo-column-4">La cookie está configurada por el complemento de consentimiento de cookies GDPR y se utiliza para almacenar si el usuario ha dado su consentimiento o no para el uso de cookies. No almacena ningún dato personal.
+</td></tr></tbody></table></p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-non-necessary" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-non-necessary" aria-controls="wt-cli-tab-non-necessary" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+                                No necesario                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-non-necessary" aria-label="non-necessary" data-id="checkbox-non-necessary" role="switch" aria-controls="wt-cli-tab-link-non-necessary" aria-labelledby="wt-cli-tab-link-non-necessary"  />
+                                    <label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Habilitadas" data-cli-disable="Deshabilitadas"><span class="wt-cli-sr-only">non-necessary</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-non-necessary" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-non-necessary" class="cli-tab-pane cli-fade" data-id="non-necessary">
+                                <p>Las cookies que pueden no ser particularmente necesarias para el funcionamiento del sitio web y se utilizan específicamente para recopilar datos personales del usuario a través de análisis, anuncios y otros contenidos incrustados se denominan cookies no necesarias. Es obligatorio obtener el consentimiento del usuario antes de ejecutar estas cookies en su sitio web.
+
+<table class="wt-cli-element cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th scope="col" class="cookielawinfo-column-1">Cookie</th><th scope="col" class="cookielawinfo-column-2">Tipo</th><th scope="col" class="cookielawinfo-column-3">Duración</th><th scope="col" class="cookielawinfo-column-4">Descripción</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">test_cookie</td><td class="cookielawinfo-column-2">0</td><td class="cookielawinfo-column-3">11 meses</td><td class="cookielawinfo-column-4">Esta cookie la establece doubleclick.net. El propósito de la cookie es determinar si el navegador del usuario admite cookies.
+</td></tr></tbody></table></p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-analytics" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-analytics" aria-controls="wt-cli-tab-analytics" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+                                Analítica                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-analytics" aria-label="analytics" data-id="checkbox-analytics" role="switch" aria-controls="wt-cli-tab-link-analytics" aria-labelledby="wt-cli-tab-link-analytics"  />
+                                    <label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Habilitadas" data-cli-disable="Deshabilitadas"><span class="wt-cli-sr-only">analytics</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-analytics" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-analytics" class="cli-tab-pane cli-fade" data-id="analytics">
+                                <p>Las cookies analíticas se utilizan para comprender cómo los visitantes interactúan con el sitio web. Estas cookies ayudan a proporcionar información sobre métricas, el número de visitantes, la tasa de rebote, la fuente de tráfico, etc.
+
+<table class="wt-cli-element cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th scope="col" class="cookielawinfo-column-1">Cookie</th><th scope="col" class="cookielawinfo-column-2">Tipo</th><th scope="col" class="cookielawinfo-column-3">Duración</th><th scope="col" class="cookielawinfo-column-4">Descripción</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">_ga</td><td class="cookielawinfo-column-2"></td><td class="cookielawinfo-column-3">2 años</td><td class="cookielawinfo-column-4">Esta cookie es instalada por Google Analytics. La cookie se utiliza para calcular los datos de visitantes, sesiones y campañas y realizar un seguimiento del uso del sitio para el informe de análisis del sitio. Las cookies almacenan información de forma anónima y asignan un número generado aleatoriamente para identificar visitantes únicos.
+</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">_gcl_au</td><td class="cookielawinfo-column-2"></td><td class="cookielawinfo-column-3">3 meses</td><td class="cookielawinfo-column-4">Google Analytics utiliza esta cookie para comprender la interacción del usuario con el sitio web.
+</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">_gid</td><td class="cookielawinfo-column-2"></td><td class="cookielawinfo-column-3">1 dia</td><td class="cookielawinfo-column-4">Esta cookie es instalada por Google Analytics. La cookie se utiliza para almacenar información sobre cómo los visitantes usan un sitio web y ayuda a crear un informe analítico de cómo está funcionando el sitio web. Los datos recopilados, incluido el número de visitantes, la fuente de donde provienen y las páginas visitadas de forma anónima.
+</td></tr></tbody></table></p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-advertisement" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-advertisement" aria-controls="wt-cli-tab-advertisement" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+                                Publicitario                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-advertisement" aria-label="advertisement" data-id="checkbox-advertisement" role="switch" aria-controls="wt-cli-tab-link-advertisement" aria-labelledby="wt-cli-tab-link-advertisement"  />
+                                    <label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Habilitadas" data-cli-disable="Deshabilitadas"><span class="wt-cli-sr-only">advertisement</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-advertisement" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-advertisement" class="cli-tab-pane cli-fade" data-id="advertisement">
+                                <p>Las cookies publicitarias se utilizan para proporcionar a los visitantes anuncios y campañas de marketing relevantes. Estas cookies rastrean a los visitantes en los sitios web y recopilan información para proporcionar anuncios personalizados.
+
+<table class="wt-cli-element cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th scope="col" class="cookielawinfo-column-1">Cookie</th><th scope="col" class="cookielawinfo-column-3">Duración</th><th scope="col" class="cookielawinfo-column-4">Descripción</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">_fbp</td><td class="cookielawinfo-column-3">3 meses</td><td class="cookielawinfo-column-4">Facebook configura esta cookie para entregar publicidad cuando están en Facebook o en una plataforma digital impulsada por publicidad de Facebook después de visitar este sitio web.
+</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">fr</td><td class="cookielawinfo-column-3">3 months</td><td class="cookielawinfo-column-4">The cookie is set by Facebook to show relevant advertisments to the users and measure and improve the advertisements. The cookie also tracks the behavior of the user across the web on sites that have Facebook pixel or Facebook social plugin.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">IDE</td><td class="cookielawinfo-column-3">1 year 24 days</td><td class="cookielawinfo-column-4">Used by Google DoubleClick and stores information about how the user uses the website and any other advertisement before visiting the website. This is used to present users with ads that are relevant to them according to the user profile.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">VISITOR_INFO1_LIVE</td><td class="cookielawinfo-column-3">5 meses 27 dias</td><td class="cookielawinfo-column-4">Youtube establece esta cookie. Se utiliza para rastrear la información de los videos de YouTube incrustados en un sitio web.
+</td></tr></tbody></table></p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-functional" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-functional" aria-controls="wt-cli-tab-functional" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+                                Functional                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-functional" aria-label="functional" data-id="checkbox-functional" role="switch" aria-controls="wt-cli-tab-link-functional" aria-labelledby="wt-cli-tab-link-functional"  />
+                                    <label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Habilitadas" data-cli-disable="Deshabilitadas"><span class="wt-cli-sr-only">functional</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-functional" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-functional" class="cli-tab-pane cli-fade" data-id="functional">
+                                <p>Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+<table class="wt-cli-element cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th scope="col" class="cookielawinfo-column-1">Cookie</th><th scope="col" class="cookielawinfo-column-3">Duración</th><th scope="col" class="cookielawinfo-column-4">Descripción</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">ss</td><td class="cookielawinfo-column-3">session</td><td class="cookielawinfo-column-4">Esta cookie la establece el proveedor Eventbrite. Esta cookie se utiliza para la funcionalidad de la función de cuadro de chat del sitio web.
+</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">TawkConnectionTime</td><td class="cookielawinfo-column-3">session</td><td class="cookielawinfo-column-4">Tawk.to establece esta cookie, que es una función de chat en vivo. La cookie se utiliza para recordar a los usuarios para que los chats anteriores se puedan vincular entre sí para brindar un mejor y mejor servicio.
+</td></tr></tbody></table></p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-performance" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-performance" aria-controls="wt-cli-tab-performance" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+                                Rendimiento                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-performance" aria-label="performance" data-id="checkbox-performance" role="switch" aria-controls="wt-cli-tab-link-performance" aria-labelledby="wt-cli-tab-link-performance"  />
+                                    <label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Habilitadas" data-cli-disable="Deshabilitadas"><span class="wt-cli-sr-only">performance</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-performance" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-performance" class="cli-tab-pane cli-fade" data-id="performance">
+                                <p>Las cookies de rendimiento se utilizan para comprender y analizar los índices de rendimiento clave del sitio web, lo que ayuda a brindar una mejor experiencia de usuario a los visitantes.
+<table class="wt-cli-element cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th scope="col" class="cookielawinfo-column-1">Cookie</th><th scope="col" class="cookielawinfo-column-3">Duración</th><th scope="col" class="cookielawinfo-column-4">Descripción</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">YSC</td><td class="cookielawinfo-column-3">session</td><td class="cookielawinfo-column-4">Estas cookies son establecidas por Youtube y se utilizan para rastrear las vistas de videos incrustados.
+</td></tr></tbody></table></p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cli-modal-footer">
+    <div class="wt-cli-element cli-container-fluid cli-tab-container">
+        <div class="cli-row">
+            <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+                <div class="cli-tab-footer wt-cli-privacy-overview-actions">
+                    
+                        
+                                                    <a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">Guardar y aceptar</a>
+                                                                    
+                </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--></div>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"rgb(255, 255, 255)","border":"#b1a6a6c2","border_on":false,"button_1_button_colour":"rgb(4, 180, 124)","button_1_button_hover":"rgb(4, 180, 124)","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"rgb(0, 0, 0)","button_2_button_hover":"rgb(0, 0, 0)","button_2_link_colour":"#fff","button_2_as_button":true,"button_2_hidebar":false,"button_2_nofollow":false,"button_3_button_colour":"rgb(204, 204, 204)","button_3_button_hover":"rgb(204, 204, 204)","button_3_link_colour":"#333","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"rgba(255, 255, 255, 0)","button_4_button_hover":"rgba(255, 255, 255, 0)","button_4_link_colour":"rgb(0, 0, 0)","button_4_as_button":false,"button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":true,"button_7_new_win":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":true,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000","logging_on":true,"as_popup":false,"popup_overlay":false,"bar_heading_text":"","cookie_bar_as":"popup","cookie_setting_popup":true,"accept_all":true,"js_script_blocker":false,"popup_showagain_position":"bottom-right","widget_position":"left","button_1_style":[["display","inline-block"],["background","#04b47c"],["border-radius","0px"],["text-align","center"],["font-size","12px"],["padding","5px 8px"],["margin-left","10px"],["margin-top","15px"],["border","solid 0px #fff"],["line-height","20px"]],"button_2_style":[["display","inline-block"],["background","#000"],["border-radius","2px"],["text-align","center"],["font-size","12px"],["padding","5px 8px"],["margin-left","10px"],["border","solid 0px #fff"],["line-height","20px"]],"button_3_style":[["display","inline-block"],["background","#ccc"],["border-radius","0px"],["text-align","center"],["font-size","12px"],["padding","5px 8px"],["margin-left","10px"],["border","solid 0px #fff"],["margin-top","15px"],["line-height","20px"]],"button_4_style":[["display","inline-block"],["text-align","center"],["font-size","14px"],["line-height","20px"],["text-decoration","underline"],["border-color","rgb(255, 255, 255)"]],"button_5_style":{"0":["display","inline-block"],"1":["background","none"],"2":["border-radius","20px"],"3":["border","solid 1px #ccc"],"4":["color","#ccc"],"5":["text-align","center"],"6":["font-size","12px"],"7":["width","22px"],"8":["height","22px"],"9":["line-height","22px"],"10":["margin-right","-25px"],"11":["margin-top","-25px"],"12":["float","right"],"13":["right","0px"],"14":["cursor","pointer"],"15":["background-color","rgba(0, 0, 0, 0)"],"18":["background-color","rgba(0, 0, 0, 0)"]},"button_7_style":[["margin","5px 5px 5px 30px"],["border-radius","0"],["padding","8px 25px 8px 25px"]],"accept_close_page_navigation":false}';
+		/* ]]> */
+		</script>
+			<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='cookie-law-info-table-css'  href='plugins/webtoffee-gdpr-cookie-consent/public/css/cookie-law-info-table.css' type='text/css' media='all' />
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/escuelaelbs.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='plugins/contact-form-7/includes/js/scripts.js' id='contact-form-7-js'></script>
+<script type='text/javascript' src='plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"https:\/\/escuelaelbs.com\/finalizar-compra\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='plugins/woocommerce/assets/js/frontend/add-to-cart.min.js' id='wc-add-to-cart-js'></script>
+<script type='text/javascript' src='plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='plugins/woocommerce/assets/js/frontend/woocommerce.min.js' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_ce7a3ea21f98f4c9fa788304edde503a","fragment_name":"wc_fragments_ce7a3ea21f98f4c9fa788304edde503a","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='plugins/woocommerce/assets/js/frontend/cart-fragments.min.js' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+var et_pb_custom = {"ajaxurl":"https:\/\/escuelaelbs.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/escuelaelbs.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/escuelaelbs.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"a8142b08aa","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"e9ec9e5d4d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3324","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='themes/Divi/js/custom.unified.js' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='themes/Divi/core/admin/js/common.js' id='et-core-common-js'></script>
+<script type='text/javascript' src='themes/Divi-fill/functions.js' id='custom-js-js'></script>
+<script type='text/javascript' src='js/wp-embed.min.js' id='wp-embed-js'></script>
+<script type='text/javascript' src='plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js' id='jquery-smooth-scroll-js'></script>
+<script type='text/javascript' src='plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js' id='jquery-sticky-kit-js'></script>
+<script type='text/javascript' id='ez-toc-js-js-extra'>
+/* <![CDATA[ */
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"","width":"auto","scroll_offset":"30"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='plugins/easy-table-of-contents/assets/js/front.min.js' id='ez-toc-js-js'></script>
+		
+					<input type="hidden" id="customProductSKU" value="" />
+			<input type="hidden" id="customProductTitle" value="" />
+		
+		<div id="divWhatsApp"></div>
+
+		<script type="text/javascript" src="https://codesneca.com/lib/webGrupoEsneca.js?v=1.0"></script>
+		<script type='text/javascript'>
+			wpCustomJSWP.setIdEscuelaActiva(17);
+					wpCustomJSWP.includeCodeQuriobot();
+				jQuery("#billing_cookie").val(decodeURIComponent(getCookie("refWeb")));
+		//get Coockie
+		function getCookie(name) {
+			var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+			return v ? v[2] : null;
+		}
+
+		</script>
+		
+		
+		<div id="isLandingPage" style="display:none;">0</div>
+		<script></scandir
+	</body>
+</html>
